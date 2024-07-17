@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ_function</title>
+    <script>
+        // let a = parseInt(prompt("Enter a number"));
+        // let b = parseInt(prompt("Enter a number"));
+        
+        // function compareNumbers(a,b){
+        // if(a<b){
+        //   return -1;
+        // }if(a>b){
+        //   return 1;
+        // }if(a === b){
+        //   return 0;
+        // }}
+        // alert(compareNumbers(a,b));
+        
+        // let n = parseInt(prompt("Введите целое число"));
+        // function factorial(n) {
+        // if (n === 0) {
+        // return 1;
+        // } else {
+        // return n * factorial(n - 1);
+        // }
+        // }alert(factorial(n));
+
+    // let num1 = prompt("Enter a number");
+    // let num2 = prompt("Enter a number");
+    // let num3 = prompt("Enter a number");
+    // function combineNumbers(num1, num2, num3) {
+    // return parseInt(num1.toString() + num2.toString() + num3.toString());
+    // }
+    // alert(combineNumbers(num1, num2, num3));
+
+    let length = parseInt(prompt("Введите значение стороны 'a' прямоугольника"));
+    let width = parseInt(prompt("Введите значение стороны 'b' прямоугольника"));
+
+    function squareArea(length, width) {
+    if (!isNaN(width) && isNaN(length)) {
+        return width ** 2;
+    } else if (isNaN(width) && !isNaN(length)) {
+        return length ** 2;
+    } else if (!isNaN(width) && !isNaN(length)) {
+        return length * width;
+    } else {
+        return "Пожалуйста, введите значения сторон прямоугольника";
+    }
+}
+
+alert(squareArea(length, width));
+</script>
+</head>
+</body>
+</html>
